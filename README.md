@@ -37,17 +37,17 @@ Run Instructions
   
 Components
   1. Chrome WebDriver
-  --+ Driver path is src/chrome_driver/chromedriver.exe
+    + Driver path is src/chrome_driver/chromedriver.exe
   2. WalmartRunTest.java
-  --+ Runs test cases as TestNG
+    + Runs test cases as TestNG
   3. pageObjects folder
-  --+ WalmartHomePage.java
+    + WalmartHomePage.java
       - Contains methods for test cases on home page
-  --+ WalmartSignInPage.java
+    + WalmartSignInPage.java
       - Contains methods for test cases on sign in page
-  --+ WalmartSearch.java
+    + WalmartSearch.java
       - Contains methods for searching test data
-  --+ WalmartCart.java
+    + WalmartCart.java
       - Contains methods for test cases on shopping cart page and adding item to cart
       - Contains validation methods
 
