@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 //For all methods at home page
 
@@ -35,6 +36,7 @@ public class WalmartHomePage {
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(SIGN_IN_LINK)));
 		 signInNavBar().click();
 		 System.out.println("Navigating to Sign In page...");
+		 Reporter.log("Navigated to Sign In page");
 	 }
 
 	 

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 //For methods for searching test data and for search result pages
 
@@ -97,7 +98,8 @@ public class WalmartSearch {
 		if (!categoryElementExists()){
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(SEARCH_RESULTS_ID)));
 		}
-		System.out.println("Showing " + searchTerm + " search results" );
+		System.out.println("Showing " + searchTerm + " search results");
+		Reporter.log("Showed " + searchTerm + " search results");
 	}
 
 	//Checks to see if redirect message exists for special cases like "toys"

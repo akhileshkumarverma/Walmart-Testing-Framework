@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -99,6 +100,7 @@ public class WalmartRunTest {
 	@AfterTest
 	public void exit() throws Exception{
 		System.out.println("Exiting...");
+		Reporter.log("Exited");
 		driver.quit();
 	}
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 
 //For methods on the shopping cart page, involving adding items, viewing shopping cart, and validation of items in the shopping cart
@@ -96,12 +97,14 @@ public class WalmartCart {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(ADD_TO_CART_BUTTON)));
 		getAddToCartBtn().click();
 		System.out.println("Added item to shopping cart");
+		Reporter.log("Added item to shopping cart");
 	}
 
 	//Click "View Cart" button in overlay
 	public void viewCart(){
 		getShoppingCart().click();
 		System.out.println("Viewing shopping cart...");
+		Reporter.log("Viewed shopping cart");
 	}
 
 	//Returns a list of item elements in the shopping cart 

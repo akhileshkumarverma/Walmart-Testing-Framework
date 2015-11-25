@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 //For all methods in the "Sign In" page
 
@@ -55,6 +56,7 @@ public class WalmartSignInPage {
 		getEmailForm().clear();
 		getEmailForm().sendKeys(email);
 		System.out.println("Inputting email address...");
+		Reporter.log("Email Address entered");
 	}
 
 	//Enters account password into "Password" input form
@@ -62,6 +64,7 @@ public class WalmartSignInPage {
 		getPasswordForm().clear();
 		getPasswordForm().sendKeys(password);
 		System.out.println("Inputting password...");
+		Reporter.log("Password entered");
 	}
 
 	//Submits email and password and navigates to user's account page
@@ -69,6 +72,7 @@ public class WalmartSignInPage {
     	getSignInButton().click();
     	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ACC_PAGE_HEADER)));
     	System.out.println("Navigating to account page...");
+    	Reporter.log("Navigated to Sign In page");
     }
 
 }
