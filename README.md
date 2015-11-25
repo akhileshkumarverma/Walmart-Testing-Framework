@@ -40,7 +40,7 @@ Components
     + Driver path is src/chrome_driver/chromedriver.exe
   2. WalmartRunTest.java
     + Runs test cases as TestNG
-  3. pageObjects folder
+  3. pageObjects folder (Chose to do page object model to eliminate duplication)
     + WalmartHomePage.java
       - Contains methods for test cases on home page
     + WalmartSignInPage.java
@@ -93,13 +93,20 @@ Components
     - Inputs search terms faster than results can load
   + Bugs with Walmart.com or Chrome may disrupt test flow
 
-##Future Changes and Tradeoffs
+##Tradeoffs
+  + Instead of just comparing title in shopping cart, automation has to click link to validate.
+    - Takes a framework longer to run
+
+##Future Changes 
   + Make framework faster and efficient
     - Rely less on comparing titles of items 
-  + Structure tests cases to run through each search item
+  + Structure tests cases to run for each search item
+    - ex.) Add item from "tv" results and then start over and add item from "dvd" etc.
   + Have code handle errors better
   + Add function to remove items if items are detected in automation
-  + Generate log using TestNG
+  + Validate if item can be added to cart
+  + Have a sign out function
+
 
 
 
