@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="NewTestForWindows">
+      <class name="WalmartRunTest">
         <methods>
-          <include name="addItemToCart" invocation-numbers="0 1 2 3 4"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="testRunner"/>
+          <include name="exit"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- NewTestForWindows -->
+      </class> <!-- WalmartRunTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

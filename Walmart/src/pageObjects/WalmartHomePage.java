@@ -34,6 +34,7 @@ public class WalmartHomePage {
 		 ((JavascriptExecutor)driver).executeScript("window.scrollTo(0,"+ signInNavBar().getLocation().y+")");
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(SIGN_IN_LINK)));
 		 signInNavBar().click();
+		 System.out.println("Navigating to Sign In page...");
 	 }
 
 	 

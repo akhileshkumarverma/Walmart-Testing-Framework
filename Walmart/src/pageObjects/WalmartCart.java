@@ -2,12 +2,13 @@ package pageObjects;
 
 import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
 
 //For methods on the shopping cart page, involving adding items, viewing shopping cart, and validation of items in the shopping cart
 
@@ -78,6 +79,11 @@ public class WalmartCart {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(FIRST_ITEM)));
 		getFirstItemFromResults().click();
 	}
+	/*
+	public WebElement getRemoveBtn(){
+		element = driver.findElement(By.id("CartSaveForLaterBtn"));
+		return element;
+	}*/
 	
 	//Gets the name of the selected item
 	public String storeItemInfo(){
@@ -95,7 +101,7 @@ public class WalmartCart {
 	//Click "View Cart" button in overlay
 	public void viewCart(){
 		getShoppingCart().click();
-		System.out.println("View shopping cart");
+		System.out.println("Viewing shopping cart...");
 	}
 	
 	//Returns a list of item elements in the shopping cart 
@@ -110,8 +116,8 @@ public class WalmartCart {
 	//Also checks if the quantity of that item is one
 	public void validateCart(List<WebElement> shoppingCart){
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ITEM_LIST)));
-		Assert.assertTrue("More than one item",	shoppingCart != null && shoppingCart.size() == 1);
-		Assert.assertTrue("More than one item",	Integer.parseInt(getQuantityofItem().getAttribute("innerHTML")) == 1);
+		Assert.assertTrue(shoppingCart != null && shoppingCart.size() == 1);
+		Assert.assertTrue(Integer.parseInt(getQuantityofItem().getAttribute("innerHTML")) == 1);
 	}
 
 	//Validates that item is the item added
@@ -125,7 +131,8 @@ public class WalmartCart {
 		String itemInfo = storeItemInfo();
 		driver.navigate().back();
 		
-		Assert.assertTrue("Not the same item as item selected",	itemInfo.equals(storedName));
+		Assert.assertTrue(itemInfo.equals(storedName));
 	}
+	
 
 }

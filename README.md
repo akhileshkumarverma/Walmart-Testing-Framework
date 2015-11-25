@@ -4,7 +4,7 @@
 ##Technologies
   + Java
   + Selenium 
-  + JUnit API
+  + TestNG
   + Eclipse IDE
   + Chrome WebDriver
 
@@ -12,7 +12,7 @@
   Be able to automate an end-to-end user e-commerce transaction flow using any open source tool for www.walmart.com with an existing customer on Chrome or Safari browser.
 
 ##Solution
-  My solution was buidling an automated testing framework using Selenium WebDriver-Java and JUnit on a Eclipse IDE. 
+  My solution was buidling an automated testing framework using Selenium WebDriver-Java and TestNG on a Eclipse IDE. 
   
   The framework automates the following scenarios in the following order:
 
@@ -32,7 +32,7 @@ Installation
   + Specify the path of the chrome web driver in the variable DRIVER_PATH in the WalmartRunTest.java.
 
 Run Instructions
-  + Run WalmartRunTest.java (Run As -> Java Application)
+  + Run WalmartRunTest.java as TestNG (Run As -> TestNG)
   + Change EMAIL and PASSWORD variables in WalmartRunTest.java if you want to use your own account.
   
 Components
@@ -95,10 +95,11 @@ Components
 
 ##Future Changes and Tradeoffs
   + Make framework faster and efficient
-  + Utilize JUnit more or try utilizing TestNG
+    - Rely less on comparing titles of items 
+  + Structure tests cases to run through each search item
   + Have code handle errors better
   + Add function to remove items if items are detected in automation
-  + Add more test case functionality 
+  + Generate log using TestNG
 
 
 

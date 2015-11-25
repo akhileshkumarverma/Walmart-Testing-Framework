@@ -81,6 +81,7 @@ public class WalmartSearch {
 		getAllDeptButton().click();
 	}
 
+	//Enters search terms into search input form
 	public void enterSearchData(String searchTerm){
 		if (getSearchBar() != null){
 			getSearchBar().clear();
@@ -91,13 +92,12 @@ public class WalmartSearch {
 	//Waits for search results
 	//Checks to see if page is a category page or search results page
 	//If not category page, waits for search results to load
-	/** what about no search results**/
 	public void waitForResults(String searchTerm){
 		waitForLoad();
 		if (!categoryElementExists()){
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(SEARCH_RESULTS_ID)));
 		}
-		System.out.println("Show " + searchTerm + " search results" );
+		System.out.println("Showing " + searchTerm + " search results" );
 	}
 	
 	//Checks to see if redirect message exists for special cases like "toys"

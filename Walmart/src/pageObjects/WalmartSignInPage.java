@@ -54,12 +54,14 @@ public class WalmartSignInPage {
 	public void enterEmailInfo(String email){
 		getEmailForm().clear();
 		getEmailForm().sendKeys(email);
+		System.out.println("Inputting email address...");
 	}
 
 	//Enters account password into "Password" input form
 	public void enterPWInfo(String password){
 		getPasswordForm().clear();
 		getPasswordForm().sendKeys(password);
+		System.out.println("Inputting password...");
 	}
 
 	//Submits email and password and navigates to user's account page
