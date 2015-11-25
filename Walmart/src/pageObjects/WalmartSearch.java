@@ -43,7 +43,7 @@ public class WalmartSearch {
 		element = driver.findElement(By.xpath(DEPT_SELECTOR));
 		return element;
 	}
-	
+
 	//Finds "All Departments" in department menu 
 	public WebElement getAllDeptButton(){
 		element = driver.findElement(By.xpath(DEPT_BUTTON));
@@ -55,15 +55,15 @@ public class WalmartSearch {
 		element = driver.findElement(By.xpath(SEARCH_BUTTON));
 		return element;
 	}
-	
+
 	//Clicks search button ands show search query results
-    public void submitSearch(){
+	public void submitSearch(){
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(SEARCH_BUTTON)));
 		getSubmitBtn().click();
 	}
-	
-    //Checks the department type parameter if it is "All Departments"
-    //Returns true if not, returns false if it is
+
+	//Checks the department type parameter if it is "All Departments"
+	//Returns true if not, returns false if it is
 	public boolean checkDeptType(){
 		if (!getDeptType().getAttribute("innerHTML").contains(" All ")){
 			return true;
@@ -72,7 +72,7 @@ public class WalmartSearch {
 			return false;
 		}
 	}
-	
+
 	//Clicks department selector and clicks "All Departments"
 	//Changes department type parameter
 	public void changeDept(){
@@ -99,17 +99,17 @@ public class WalmartSearch {
 		}
 		System.out.println("Showing " + searchTerm + " search results" );
 	}
-	
+
 	//Checks to see if redirect message exists for special cases like "toys"
 	private boolean categoryElementExists() {
-	    try {
-	    	driver.findElement(By.xpath(CATEGORY_INFO));
-	    } catch (NoSuchElementException e) {
-	        return false;
-	    }
-	    return true;
+		try {
+			driver.findElement(By.xpath(CATEGORY_INFO));
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+		return true;
 	}
-	
+
 	//Waits for page to load
 	public void waitForLoad() {
 		ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {

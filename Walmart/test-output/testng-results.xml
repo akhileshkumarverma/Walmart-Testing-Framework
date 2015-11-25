@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Navigating to Sign In page]]>
-    </line>
-    <line>
-      <![CDATA[Inputting email address]]>
-    </line>
-    <line>
-      <![CDATA[Inputting password]]>
-    </line>
-    <line>
-      <![CDATA[Navigating to account page]]>
-    </line>
-    <line>
-      <![CDATA[Showing toys search results]]>
-    </line>
-    <line>
-      <![CDATA[Showing dvd search results]]>
-    </line>
-    <line>
-      <![CDATA[Showing iPhone search results]]>
-    </line>
-    <line>
-      <![CDATA[Showing socks search results]]>
-    </line>
-    <line>
-      <![CDATA[Showing tv search results]]>
-    </line>
-    <line>
-      <![CDATA[Added item to shopping cart]]>
-    </line>
-    <line>
-      <![CDATA[View shopping cart]]>
-    </line>
-    <line>
-      <![CDATA[Getting shopping cart items]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="124806" started-at="2015-11-25T05:31:20Z" finished-at="2015-11-25T05:33:25Z">
+  <suite name="Default suite" duration-ms="81667" started-at="2015-11-25T18:08:30Z" finished-at="2015-11-25T18:09:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="124806" started-at="2015-11-25T05:31:20Z" finished-at="2015-11-25T05:33:25Z">
+    <test name="Default test" duration-ms="81667" started-at="2015-11-25T18:08:30Z" finished-at="2015-11-25T18:09:52Z">
       <class name="WalmartRunTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:WalmartRunTest@1209079]" name="init" is-config="true" duration-ms="28709" started-at="2015-11-24T21:31:20Z" finished-at="2015-11-24T21:31:48Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:WalmartRunTest@1209079]" name="init" is-config="true" duration-ms="11657" started-at="2015-11-25T10:08:30Z" finished-at="2015-11-25T10:08:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testRunner([Ljava.lang.String;)[pri:0, instance:WalmartRunTest@1209079]" name="testRunner" duration-ms="93511" started-at="2015-11-24T21:31:48Z" data-provider="testData" finished-at="2015-11-24T21:33:22Z">
+        <test-method status="PASS" signature="testRunner([Ljava.lang.String;)[pri:0, instance:WalmartRunTest@1209079]" name="testRunner" duration-ms="68037" started-at="2015-11-25T10:08:42Z" data-provider="testData" finished-at="2015-11-25T10:09:50Z">
           <params>
             <param index="0">
               <value>
@@ -56,45 +20,9 @@
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Navigating to Sign In page]]>
-            </line>
-            <line>
-              <![CDATA[Inputting email address]]>
-            </line>
-            <line>
-              <![CDATA[Inputting password]]>
-            </line>
-            <line>
-              <![CDATA[Navigating to account page]]>
-            </line>
-            <line>
-              <![CDATA[Showing toys search results]]>
-            </line>
-            <line>
-              <![CDATA[Showing dvd search results]]>
-            </line>
-            <line>
-              <![CDATA[Showing iPhone search results]]>
-            </line>
-            <line>
-              <![CDATA[Showing socks search results]]>
-            </line>
-            <line>
-              <![CDATA[Showing tv search results]]>
-            </line>
-            <line>
-              <![CDATA[Added item to shopping cart]]>
-            </line>
-            <line>
-              <![CDATA[View shopping cart]]>
-            </line>
-            <line>
-              <![CDATA[Getting shopping cart items]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testRunner -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:WalmartRunTest@1209079]" name="exit" is-config="true" duration-ms="2566" started-at="2015-11-24T21:33:22Z" finished-at="2015-11-24T21:33:25Z">
+        <test-method status="PASS" signature="exit()[pri:0, instance:WalmartRunTest@1209079]" name="exit" is-config="true" duration-ms="1957" started-at="2015-11-25T10:09:50Z" finished-at="2015-11-25T10:09:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->

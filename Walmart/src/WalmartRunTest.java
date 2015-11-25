@@ -15,7 +15,7 @@ import pageObjects.WalmartHomePage;
 import pageObjects.WalmartSearch;
 import pageObjects.WalmartSignInPage;
 
-//Runs test cases. Gets methods from pagObject classes.
+//Runs test cases as TestNG. Gets methods from pagObject classes.
 
 public class WalmartRunTest {
 
@@ -43,8 +43,6 @@ public class WalmartRunTest {
 	public Object[][] getData() {
 		return new Object[][] { {SEARCH_TERMS} };
 	}
-
-
 
 	@Test (dataProvider = "testData")
 	public void testRunner (String[] searchTerms) throws Exception{
